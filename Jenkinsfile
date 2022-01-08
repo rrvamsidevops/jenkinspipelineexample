@@ -1,5 +1,8 @@
 pipeline {
     agent any 
+     tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "Maven1-Server1"
     stages {
         stage ('SCM for Java Code') {
             steps{
